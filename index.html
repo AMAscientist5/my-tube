@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.9/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>my-tube</title>
+  </head>
+  <body>
+    <header>
+      <div class=" py-10 mx-auto bg-base-100 navbar container mb-20 px-4 rounded-b-lg">
+        <div class="navbar-start">
+          <img src="./resource/Logo.png" alt="" />
+        </div>
+        <div class="navbar-center lg:flex">
+          <button onclick="handleSortBtn(1000)" class="btn btn-active">
+            Sort by Views
+          </button>
+        </div>
+        <div class="navbar-end">
+          <a
+            href="./blog.html"
+            target="_blank"
+            class="btn bg-red-400 hover:bg-red-600"
+            >Blog</a
+          >
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div id="btn-container" class="flex justify-center"></div>
+      </div>
+    </header>
+
+    <main>
+      <div  id="card-parent"
+        class="grid container gap-2 mt-20 mx-auto  lg:grid-cols-3 md:grid-cols-2 grid-cols-1 ">
+      </div>
+    </main>
+    <div id="error-handel"></div>
+
+    <!-- script -->
+    <script src="./index.js"></script>
+  </body>
+</html>
